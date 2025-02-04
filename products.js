@@ -4,6 +4,14 @@ document.addEventListener("DOMContentLoaded", function() {
       { id: 1, name: "Termék 1", price: 5000, imgSrc: "https://via.placeholder.com/200" },
       { id: 2, name: "Termék 2", price: 7500, imgSrc: "https://via.placeholder.com/200" },
       { id: 3, name: "Termék 3", price: 12000, imgSrc: "https://via.placeholder.com/200" },
+      { id: 4, name: "Termék 4", price: 12000, imgSrc: "https://via.placeholder.com/200" },
+      { id: 5, name: "Termék 5", price: 12000, imgSrc: "https://via.placeholder.com/200" },
+      { id: 6, name: "Termék 6", price: 12000, imgSrc: "https://via.placeholder.com/200" },
+      { id: 7, name: "Termék 7", price: 12000, imgSrc: "https://via.placeholder.com/200" },
+      { id: 8, name: "Termék 8", price: 12000, imgSrc: "https://via.placeholder.com/200" },
+      { id: 9, name: "Termék 9", price: 12000, imgSrc: "https://via.placeholder.com/200" },
+      { id: 10, name: "Termék 10", price: 12000, imgSrc: "https://via.placeholder.com/200" },
+
     ];
   
     // Termékek megjelenítése

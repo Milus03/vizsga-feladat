@@ -1,24 +1,21 @@
-// app_cart.js (kosár logika)
 
 let cart = [];
-
-// Kosárba rakás funkció
 function addToCart(product) {
   cart.push(product);
   alert(`${product.name} hozzáadva a kosárhoz!`);
   updateCart();
 }
 
-// Kosár tartalmának frissítése
+
 function updateCart() {
   const cartCount = document.getElementById('cart-count');
-  cartCount.innerText = cart.length; // Frissíti a kosár ikonban a számot
+  cartCount.innerText = cart.length; 
 }
 
-// Kosár megjelenítése
+
 function viewCart() {
   const cartContent = document.getElementById('cart-content');
-  cartContent.innerHTML = ''; // Előző tartalom törlése
+  cartContent.innerHTML = ''; 
   
   if (cart.length === 0) {
     cartContent.innerHTML = '<p>A kosár üres.</p>';
@@ -33,15 +30,15 @@ function viewCart() {
       cartContent.appendChild(productElement);
     });
   }
-  cartContent.style.display = 'block'; // Kosár megjelenítése
+  cartContent.style.display = 'block'; 
 }
 
-// Kosárból való eltávolítás
+
 function removeFromCart(productId) {
   cart = cart.filter(item => item.id !== productId);
   updateCart();
   viewCart();
 }
 
-// Kosár gomb eseménykezelője
+
 document.getElementById('view-cart-btn').addEventListener('click', viewCart);
